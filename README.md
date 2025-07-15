@@ -3,7 +3,7 @@
 The official code of paper [*"ThiefCloud: A Thickness Fused Thin Cloud Removal Network for Optical Remote Sensing Image With Self-Supervised Learnable Cloud Prior"*](https://ieeexplore.ieee.org/document/11071276), <u>*TCSVT'2025*</u>, Accepted.
 
 Abstract:Optical remote sensing images are frequently contaminated by thin clouds, thus causing great challenges for subsequent applications. To address this issue, numerous methods guided by cloud features have been developed. However, <u> the cloud features utilized in these methods are generally either unlearnable or lack cloud thickness data constraints</u>, which may further mislead the cloud removal. In this paper, a THIcknEss Fused thin cloud removal network (ThiefCloud) with self-supervised learnable cloud prior is proposed. Firstly, in order to provide reliable cloud prior, a self-supervised cloud prior model (SCPM) is introduced. Secondly, an adaptive feature extraction (AFE) module efficiently extracts the cloud information of the original cloud image, and a physically guided feature fusion (PGFF) module, inspired by the atmospheric scattering model, accurately restores more realistic details. Finally, to enhance the generalizability of SCPM in real scenarios, a staged training strategy is adopted. SCPM is trained independently on the simulated thickness maps and cloud images in advance, then SCPM can guide ThiefCloud. During the training of ThiefCloud, SCPM is frozen initially and then tunable. The frozen SCPM provides effective cloud prior to the non-converged ThiefCloud. The tunable SCPM makes the cloud prior learnable, better aligning with real-world cloud removal. Experimental results demonstrate that compared with other 11 methods, ThiefCloud could achieve competitive results on three public datasets, namely T-CLOUD, RICE and SateHaze1k datasets.
-![](Figure/Fig1.png)
+![](Figure/FIg1.png)
 
 *This research has been conducted at the [Multi-temporal Artificial Intelligent Remote Sensing (MAIRS)](https://jszy.whu.edu.cn/lixinghua2/zh_CN/index.htm).*
     
@@ -30,7 +30,7 @@ This is the official <u>*PyTorch*</u> implementation of the thin cloud removal m
 ### Usage
 - overall workflow
 
-  ![](Figure/Fig2.png)
+  ![](Figure/FIg2.png)
 
 <ba>
 
@@ -57,10 +57,10 @@ This is the official <u>*PyTorch*</u> implementation of the thin cloud removal m
 ---
 ### Results
 - Example results and details of different methods on the T-CLOUD dataset:
-![](Figure/Fig3.png)
+![](Figure/FIg3.png)
 
 - Example results and details of different methods on the RICE dataset:
-![](Figure/Fig4.png)
+![](Figure/FIg4.png)
 
 
 ---
